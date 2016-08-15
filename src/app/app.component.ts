@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES, RouterLink} from '@angular/router';
 import { ApiService } from './shared';
-import { TopNavComponent } from './topnav/topnav.component';
-import { FooterComponent } from './footer/footer.component';
+//import { TopNavComponent } from './topnav/topnav.component';
+//import { FooterComponent } from './footer/footer.component';
 
 import '../style/app.scss';
 
@@ -13,7 +13,7 @@ import '../style/app.scss';
 @Component({
   selector: 'my-app', // <my-app></my-app>
   providers: [ApiService],
-  directives: [...ROUTER_DIRECTIVES, RouterLink, TopNavComponent, FooterComponent],
+  directives: [...ROUTER_DIRECTIVES, RouterLink],
   templateUrl: './app.component.html'
 })
 export class AppComponent {
